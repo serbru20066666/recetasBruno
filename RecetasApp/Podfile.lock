@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - Japx/Alamofire (2.2.0):
+    - Alamofire (~> 4.9)
+    - Japx/Core
+  - Japx/Codable (2.2.0):
+    - Japx/Core
+  - Japx/CodableAlamofire (2.2.0):
+    - Japx/Alamofire
+    - Japx/Codable
+  - Japx/Core (2.2.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.2)
+  - AlamofireNetworkActivityIndicator (~> 2.1)
+  - Japx/CodableAlamofire
+  - SVProgressHUD (~> 2.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireNetworkActivityIndicator
+    - Japx
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  Japx: 9e0b8e00c8a2b79b967f0ae4bd8eb5a293cc9c30
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: af88fd7126b8d7c79f06b10d7380fff13f8e2276
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1512B7D8291C6812008FC518 /* DetailRecetaInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7D2291C6812008FC518 /* DetailRecetaInterfaces.swift */; };
+		1512B7D9291C6812008FC518 /* DetailRecetaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7D3291C6812008FC518 /* DetailRecetaPresenter.swift */; };
+		1512B7DA291C6812008FC518 /* DetailRecetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7D4291C6812008FC518 /* DetailRecetaViewController.swift */; };
+		1512B7DB291C6812008FC518 /* DetailRecetaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7D5291C6812008FC518 /* DetailRecetaInteractor.swift */; };
+		1512B7DC291C6812008FC518 /* DetailRecetaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1512B7D6291C6812008FC518 /* DetailRecetaViewController.xib */; };
+		1512B7DD291C6812008FC518 /* DetailRecetaWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7D7291C6812008FC518 /* DetailRecetaWireframe.swift */; };
+		1512B7E1291C71D1008FC518 /* recetaInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7DF291C71D1008FC518 /* recetaInfoCell.swift */; };
+		1512B7E2291C71D1008FC518 /* recetaInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1512B7E0291C71D1008FC518 /* recetaInfoCell.xib */; };
+		1512B7E9291C7F9E008FC518 /* PlaceInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7E4291C7F9E008FC518 /* PlaceInterfaces.swift */; };
+		1512B7EA291C7F9E008FC518 /* PlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7E5291C7F9E008FC518 /* PlacePresenter.swift */; };
+		1512B7EB291C7F9E008FC518 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7E6291C7F9E008FC518 /* PlaceViewController.swift */; };
+		1512B7EC291C7F9E008FC518 /* PlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1512B7E7291C7F9E008FC518 /* PlaceViewController.xib */; };
+		1512B7ED291C7F9E008FC518 /* PlaceWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7E8291C7F9E008FC518 /* PlaceWireframe.swift */; };
+		1512B7EF291C8175008FC518 /* MapKit+Recetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512B7EE291C8175008FC518 /* MapKit+Recetas.swift */; };
+		15367611291C0FC7000A7362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367610291C0FC7000A7362 /* AppDelegate.swift */; };
+		1536761A291C0FC7000A7362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15367619291C0FC7000A7362 /* Assets.xcassets */; };
+		1536761D291C0FC7000A7362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1536761B291C0FC7000A7362 /* LaunchScreen.storyboard */; };
+		1536762B291C102C000A7362 /* ListaRecetasInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367625291C102C000A7362 /* ListaRecetasInterfaces.swift */; };
+		1536762C291C102C000A7362 /* ListaRecetasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367626291C102C000A7362 /* ListaRecetasPresenter.swift */; };
+		1536762D291C102C000A7362 /* ListaRecetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367627291C102C000A7362 /* ListaRecetasViewController.swift */; };
+		1536762E291C102C000A7362 /* ListaRecetasInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367628291C102C000A7362 /* ListaRecetasInteractor.swift */; };
+		1536762F291C102C000A7362 /* ListaRecetasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15367629291C102C000A7362 /* ListaRecetasViewController.xib */; };
+		15367630291C102C000A7362 /* ListaRecetasWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536762A291C102C000A7362 /* ListaRecetasWireframe.swift */; };
+		1536763F291C1098000A7362 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367634291C1098000A7362 /* BaseWireframe.swift */; };
+		15367640291C1098000A7362 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367635291C1098000A7362 /* UIStoryboardExtension.swift */; };
+		15367641291C1098000A7362 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367636291C1098000A7362 /* PresenterInterface.swift */; };
+		15367642291C1098000A7362 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367637291C1098000A7362 /* ViewInterface.swift */; };
+		15367643291C1098000A7362 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367638291C1098000A7362 /* InteractorInterface.swift */; };
+		15367644291C1098000A7362 /* Error+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536763A291C1098000A7362 /* Error+Message.swift */; };
+		15367645291C1098000A7362 /* UIColor+Recetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536763B291C1098000A7362 /* UIColor+Recetas.swift */; };
+		15367646291C1098000A7362 /* String+IndexOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536763C291C1098000A7362 /* String+IndexOf.swift */; };
+		15367647291C1098000A7362 /* UITableView+DequeueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536763D291C1098000A7362 /* UITableView+DequeueCell.swift */; };
+		15367648291C1098000A7362 /* KeyDecodingStategy+KebabCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536763E291C1098000A7362 /* KeyDecodingStategy+KebabCase.swift */; };
+		1536764D291C11EC000A7362 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536764C291C11EC000A7362 /* ProgressHUD.swift */; };
+		15367650291C1285000A7362 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536764F291C1285000A7362 /* APIError.swift */; };
+		15367653291C1B60000A7362 /* RecetasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367652291C1B60000A7362 /* RecetasService.swift */; };
+		1536765B291C1C3E000A7362 /* Recetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536765A291C1C3E000A7362 /* Recetas.swift */; };
+		1536765E291C1C9C000A7362 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536765D291C1C9C000A7362 /* Constants.swift */; };
+		15367660291C1E37000A7362 /* KebabCaseJAPXDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536765F291C1E37000A7362 /* KebabCaseJAPXDecoder.swift */; };
+		15367666291C1F7B000A7362 /* ThemeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367662291C1F7B000A7362 /* ThemeInitializer.swift */; };
+		15367667291C1F7B000A7362 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367663291C1F7B000A7362 /* Initializer.swift */; };
+		15367669291C1F7B000A7362 /* AlamofireInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367665291C1F7B000A7362 /* AlamofireInitializer.swift */; };
+		1536766B291C202E000A7362 /* RecetasNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536766A291C202E000A7362 /* RecetasNavigationController.swift */; };
+		1536766F291C33C8000A7362 /* RecetaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536766D291C33C8000A7362 /* RecetaCell.swift */; };
+		15367670291C33C8000A7362 /* RecetaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1536766E291C33C8000A7362 /* RecetaCell.xib */; };
+		B2DA99AE16A805FE865FD6A9 /* Pods_RecetasApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84827B83F6FEE7439F7FAE7 /* Pods_RecetasApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1512B7D2291C6812008FC518 /* DetailRecetaInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecetaInterfaces.swift; sourceTree = "<group>"; };
+		1512B7D3291C6812008FC518 /* DetailRecetaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecetaPresenter.swift; sourceTree = "<group>"; };
+		1512B7D4291C6812008FC518 /* DetailRecetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecetaViewController.swift; sourceTree = "<group>"; };
+		1512B7D5291C6812008FC518 /* DetailRecetaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecetaInteractor.swift; sourceTree = "<group>"; };
+		1512B7D6291C6812008FC518 /* DetailRecetaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecetaViewController.xib; sourceTree = "<group>"; };
+		1512B7D7291C6812008FC518 /* DetailRecetaWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecetaWireframe.swift; sourceTree = "<group>"; };
+		1512B7DF291C71D1008FC518 /* recetaInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recetaInfoCell.swift; sourceTree = "<group>"; };
+		1512B7E0291C71D1008FC518 /* recetaInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = recetaInfoCell.xib; sourceTree = "<group>"; };
+		1512B7E4291C7F9E008FC518 /* PlaceInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInterfaces.swift; sourceTree = "<group>"; };
+		1512B7E5291C7F9E008FC518 /* PlacePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePresenter.swift; sourceTree = "<group>"; };
+		1512B7E6291C7F9E008FC518 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		1512B7E7291C7F9E008FC518 /* PlaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceViewController.xib; sourceTree = "<group>"; };
+		1512B7E8291C7F9E008FC518 /* PlaceWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceWireframe.swift; sourceTree = "<group>"; };
+		1512B7EE291C8175008FC518 /* MapKit+Recetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapKit+Recetas.swift"; sourceTree = "<group>"; };
+		1536760D291C0FC7000A7362 /* RecetasApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecetasApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15367610291C0FC7000A7362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15367619291C0FC7000A7362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1536761C291C0FC7000A7362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1536761E291C0FC7000A7362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15367625291C102C000A7362 /* ListaRecetasInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaRecetasInterfaces.swift; sourceTree = "<group>"; };
+		15367626291C102C000A7362 /* ListaRecetasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaRecetasPresenter.swift; sourceTree = "<group>"; };
+		15367627291C102C000A7362 /* ListaRecetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaRecetasViewController.swift; sourceTree = "<group>"; };
+		15367628291C102C000A7362 /* ListaRecetasInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaRecetasInteractor.swift; sourceTree = "<group>"; };
+		15367629291C102C000A7362 /* ListaRecetasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaRecetasViewController.xib; sourceTree = "<group>"; };
+		1536762A291C102C000A7362 /* ListaRecetasWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaRecetasWireframe.swift; sourceTree = "<group>"; };
+		15367634291C1098000A7362 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		15367635291C1098000A7362 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		15367636291C1098000A7362 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		15367637291C1098000A7362 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		15367638291C1098000A7362 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		1536763A291C1098000A7362 /* Error+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Message.swift"; sourceTree = "<group>"; };
+		1536763B291C1098000A7362 /* UIColor+Recetas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Recetas.swift"; sourceTree = "<group>"; };
+		1536763C291C1098000A7362 /* String+IndexOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+IndexOf.swift"; sourceTree = "<group>"; };
+		1536763D291C1098000A7362 /* UITableView+DequeueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+DequeueCell.swift"; sourceTree = "<group>"; };
+		1536763E291C1098000A7362 /* KeyDecodingStategy+KebabCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyDecodingStategy+KebabCase.swift"; sourceTree = "<group>"; };
+		1536764C291C11EC000A7362 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		1536764F291C1285000A7362 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		15367652291C1B60000A7362 /* RecetasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasService.swift; sourceTree = "<group>"; };
+		1536765A291C1C3E000A7362 /* Recetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recetas.swift; sourceTree = "<group>"; };
+		1536765D291C1C9C000A7362 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1536765F291C1E37000A7362 /* KebabCaseJAPXDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KebabCaseJAPXDecoder.swift; sourceTree = "<group>"; };
+		15367662291C1F7B000A7362 /* ThemeInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeInitializer.swift; sourceTree = "<group>"; };
+		15367663291C1F7B000A7362 /* Initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		15367665291C1F7B000A7362 /* AlamofireInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireInitializer.swift; sourceTree = "<group>"; };
+		1536766A291C202E000A7362 /* RecetasNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecetasNavigationController.swift; sourceTree = "<group>"; };
+		1536766D291C33C8000A7362 /* RecetaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaCell.swift; sourceTree = "<group>"; };
+		1536766E291C33C8000A7362 /* RecetaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecetaCell.xib; sourceTree = "<group>"; };
+		52F430853E740898EA0B642F /* Pods-RecetasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecetasApp.release.xcconfig"; path = "Target Support Files/Pods-RecetasApp/Pods-RecetasApp.release.xcconfig"; sourceTree = "<group>"; };
+		64035470192921FBDF7B94DA /* Pods-RecetasApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecetasApp.debug.xcconfig"; path = "Target Support Files/Pods-RecetasApp/Pods-RecetasApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F84827B83F6FEE7439F7FAE7 /* Pods_RecetasApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecetasApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1536760A291C0FC7000A7362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DA99AE16A805FE865FD6A9 /* Pods_RecetasApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1512B7D1291C67AD008FC518 /* RecetaDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1512B7DE291C71BE008FC518 /* Cells */,
+				1512B7D2291C6812008FC518 /* DetailRecetaInterfaces.swift */,
+				1512B7D3291C6812008FC518 /* DetailRecetaPresenter.swift */,
+				1512B7D4291C6812008FC518 /* DetailRecetaViewController.swift */,
+				1512B7D5291C6812008FC518 /* DetailRecetaInteractor.swift */,
+				1512B7D6291C6812008FC518 /* DetailRecetaViewController.xib */,
+				1512B7D7291C6812008FC518 /* DetailRecetaWireframe.swift */,
+			);
+			path = RecetaDetail;
+			sourceTree = "<group>";
+		};
+		1512B7DE291C71BE008FC518 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1512B7DF291C71D1008FC518 /* recetaInfoCell.swift */,
+				1512B7E0291C71D1008FC518 /* recetaInfoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1512B7E3291C7F2A008FC518 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1512B7E4291C7F9E008FC518 /* PlaceInterfaces.swift */,
+				1512B7E5291C7F9E008FC518 /* PlacePresenter.swift */,
+				1512B7E6291C7F9E008FC518 /* PlaceViewController.swift */,
+				1512B7E7291C7F9E008FC518 /* PlaceViewController.xib */,
+				1512B7E8291C7F9E008FC518 /* PlaceWireframe.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		15367604291C0FC7000A7362 = {
+			isa = PBXGroup;
+			children = (
+				1536760F291C0FC7000A7362 /* RecetasApp */,
+				1536760E291C0FC7000A7362 /* Products */,
+				755D512B4761A5063880A1A6 /* Pods */,
+				FD3273BC39958DE53D140710 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1536760E291C0FC7000A7362 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1536760D291C0FC7000A7362 /* RecetasApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1536760F291C0FC7000A7362 /* RecetasApp */ = {
+			isa = PBXGroup;
+			children = (
+				1536761E291C0FC7000A7362 /* Info.plist */,
+				1536765C291C1C93000A7362 /* Application */,
+				15367632291C108C000A7362 /* Common */,
+				15367631291C1083000A7362 /* Modules */,
+				15367619291C0FC7000A7362 /* Assets.xcassets */,
+				1536761B291C0FC7000A7362 /* LaunchScreen.storyboard */,
+			);
+			path = RecetasApp;
+			sourceTree = "<group>";
+		};
+		15367624291C0FF8000A7362 /* RecetasList */ = {
+			isa = PBXGroup;
+			children = (
+				1536766C291C33B2000A7362 /* cells */,
+				15367625291C102C000A7362 /* ListaRecetasInterfaces.swift */,
+				15367626291C102C000A7362 /* ListaRecetasPresenter.swift */,
+				15367627291C102C000A7362 /* ListaRecetasViewController.swift */,
+				15367628291C102C000A7362 /* ListaRecetasInteractor.swift */,
+				15367629291C102C000A7362 /* ListaRecetasViewController.xib */,
+				1536762A291C102C000A7362 /* ListaRecetasWireframe.swift */,
+			);
+			path = RecetasList;
+			sourceTree = "<group>";
+		};
+		15367631291C1083000A7362 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1512B7E3291C7F2A008FC518 /* Map */,
+				1512B7D1291C67AD008FC518 /* RecetaDetail */,
+				15367624291C0FF8000A7362 /* RecetasList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		15367632291C108C000A7362 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				15367659291C1C35000A7362 /* Models */,
+				15367651291C1308000A7362 /* Services */,
+				1536764E291C1279000A7362 /* API */,
+				1536764C291C11EC000A7362 /* ProgressHUD.swift */,
+				15367639291C1098000A7362 /* Extensions */,
+				15367633291C1098000A7362 /* VIPER */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		15367633291C1098000A7362 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				15367634291C1098000A7362 /* BaseWireframe.swift */,
+				15367635291C1098000A7362 /* UIStoryboardExtension.swift */,
+				15367636291C1098000A7362 /* PresenterInterface.swift */,
+				15367637291C1098000A7362 /* ViewInterface.swift */,
+				15367638291C1098000A7362 /* InteractorInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		15367639291C1098000A7362 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1536763A291C1098000A7362 /* Error+Message.swift */,
+				1536763B291C1098000A7362 /* UIColor+Recetas.swift */,
+				1536763C291C1098000A7362 /* String+IndexOf.swift */,
+				1536763D291C1098000A7362 /* UITableView+DequeueCell.swift */,
+				1536763E291C1098000A7362 /* KeyDecodingStategy+KebabCase.swift */,
+				1512B7EE291C8175008FC518 /* MapKit+Recetas.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1536764E291C1279000A7362 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1536765F291C1E37000A7362 /* KebabCaseJAPXDecoder.swift */,
+				1536764F291C1285000A7362 /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		15367651291C1308000A7362 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15367652291C1B60000A7362 /* RecetasService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		15367659291C1C35000A7362 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1536765A291C1C3E000A7362 /* Recetas.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1536765C291C1C93000A7362 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				15367610291C0FC7000A7362 /* AppDelegate.swift */,
+				1536766A291C202E000A7362 /* RecetasNavigationController.swift */,
+				15367661291C1F7B000A7362 /* Initializers */,
+				1536765D291C1C9C000A7362 /* Constants.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		15367661291C1F7B000A7362 /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				15367662291C1F7B000A7362 /* ThemeInitializer.swift */,
+				15367663291C1F7B000A7362 /* Initializer.swift */,
+				15367665291C1F7B000A7362 /* AlamofireInitializer.swift */,
+			);
+			path = Initializers;
+			sourceTree = "<group>";
+		};
+		1536766C291C33B2000A7362 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				1536766D291C33C8000A7362 /* RecetaCell.swift */,
+				1536766E291C33C8000A7362 /* RecetaCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		755D512B4761A5063880A1A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64035470192921FBDF7B94DA /* Pods-RecetasApp.debug.xcconfig */,
+				52F430853E740898EA0B642F /* Pods-RecetasApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD3273BC39958DE53D140710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F84827B83F6FEE7439F7FAE7 /* Pods_RecetasApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1536760C291C0FC7000A7362 /* RecetasApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15367621291C0FC7000A7362 /* Build configuration list for PBXNativeTarget "RecetasApp" */;
+			buildPhases = (
+				BC58B2A431D8D446E7CB9594 /* [CP] Check Pods Manifest.lock */,
+				15367609291C0FC7000A7362 /* Sources */,
+				1536760A291C0FC7000A7362 /* Frameworks */,
+				1536760B291C0FC7000A7362 /* Resources */,
+				5B9A8C3FE51B53A07418F73D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecetasApp;
+			productName = RecetasApp;
+			productReference = 1536760D291C0FC7000A7362 /* RecetasApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15367605291C0FC7000A7362 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1536760C291C0FC7000A7362 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 15367608291C0FC7000A7362 /* Build configuration list for PBXProject "RecetasApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15367604291C0FC7000A7362;
+			productRefGroup = 1536760E291C0FC7000A7362 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1536760C291C0FC7000A7362 /* RecetasApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1536760B291C0FC7000A7362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1536761D291C0FC7000A7362 /* LaunchScreen.storyboard in Resources */,
+				1512B7EC291C7F9E008FC518 /* PlaceViewController.xib in Resources */,
+				1512B7DC291C6812008FC518 /* DetailRecetaViewController.xib in Resources */,
+				1536761A291C0FC7000A7362 /* Assets.xcassets in Resources */,
+				1512B7E2291C71D1008FC518 /* recetaInfoCell.xib in Resources */,
+				1536762F291C102C000A7362 /* ListaRecetasViewController.xib in Resources */,
+				15367670291C33C8000A7362 /* RecetaCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B9A8C3FE51B53A07418F73D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecetasApp/Pods-RecetasApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecetasApp/Pods-RecetasApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecetasApp/Pods-RecetasApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC58B2A431D8D446E7CB9594 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecetasApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15367609291C0FC7000A7362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1536763F291C1098000A7362 /* BaseWireframe.swift in Sources */,
+				1536762D291C102C000A7362 /* ListaRecetasViewController.swift in Sources */,
+				1536764D291C11EC000A7362 /* ProgressHUD.swift in Sources */,
+				1536766F291C33C8000A7362 /* RecetaCell.swift in Sources */,
+				15367648291C1098000A7362 /* KeyDecodingStategy+KebabCase.swift in Sources */,
+				15367666291C1F7B000A7362 /* ThemeInitializer.swift in Sources */,
+				15367669291C1F7B000A7362 /* AlamofireInitializer.swift in Sources */,
+				15367644291C1098000A7362 /* Error+Message.swift in Sources */,
+				1512B7EA291C7F9E008FC518 /* PlacePresenter.swift in Sources */,
+				15367667291C1F7B000A7362 /* Initializer.swift in Sources */,
+				1536766B291C202E000A7362 /* RecetasNavigationController.swift in Sources */,
+				15367641291C1098000A7362 /* PresenterInterface.swift in Sources */,
+				1512B7EB291C7F9E008FC518 /* PlaceViewController.swift in Sources */,
+				1536765E291C1C9C000A7362 /* Constants.swift in Sources */,
+				1512B7E1291C71D1008FC518 /* recetaInfoCell.swift in Sources */,
+				15367640291C1098000A7362 /* UIStoryboardExtension.swift in Sources */,
+				1536762C291C102C000A7362 /* ListaRecetasPresenter.swift in Sources */,
+				15367611291C0FC7000A7362 /* AppDelegate.swift in Sources */,
+				15367630291C102C000A7362 /* ListaRecetasWireframe.swift in Sources */,
+				1512B7DA291C6812008FC518 /* DetailRecetaViewController.swift in Sources */,
+				1512B7ED291C7F9E008FC518 /* PlaceWireframe.swift in Sources */,
+				15367647291C1098000A7362 /* UITableView+DequeueCell.swift in Sources */,
+				15367650291C1285000A7362 /* APIError.swift in Sources */,
+				15367660291C1E37000A7362 /* KebabCaseJAPXDecoder.swift in Sources */,
+				1536762B291C102C000A7362 /* ListaRecetasInterfaces.swift in Sources */,
+				1512B7EF291C8175008FC518 /* MapKit+Recetas.swift in Sources */,
+				1512B7D9291C6812008FC518 /* DetailRecetaPresenter.swift in Sources */,
+				15367642291C1098000A7362 /* ViewInterface.swift in Sources */,
+				15367643291C1098000A7362 /* InteractorInterface.swift in Sources */,
+				1536762E291C102C000A7362 /* ListaRecetasInteractor.swift in Sources */,
+				1512B7DB291C6812008FC518 /* DetailRecetaInteractor.swift in Sources */,
+				15367646291C1098000A7362 /* String+IndexOf.swift in Sources */,
+				1536765B291C1C3E000A7362 /* Recetas.swift in Sources */,
+				15367653291C1B60000A7362 /* RecetasService.swift in Sources */,
+				1512B7D8291C6812008FC518 /* DetailRecetaInterfaces.swift in Sources */,
+				1512B7E9291C7F9E008FC518 /* PlaceInterfaces.swift in Sources */,
+				15367645291C1098000A7362 /* UIColor+Recetas.swift in Sources */,
+				1512B7DD291C6812008FC518 /* DetailRecetaWireframe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1536761B291C0FC7000A7362 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1536761C291C0FC7000A7362 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1536761F291C0FC7000A7362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15367620291C0FC7000A7362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15367622291C0FC7000A7362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64035470192921FBDF7B94DA /* Pods-RecetasApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XK5CRCQN9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecetasApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dfgfdg.RecetasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15367623291C0FC7000A7362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F430853E740898EA0B642F /* Pods-RecetasApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XK5CRCQN9Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RecetasApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dfgfdg.RecetasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15367608291C0FC7000A7362 /* Build configuration list for PBXProject "RecetasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1536761F291C0FC7000A7362 /* Debug */,
+				15367620291C0FC7000A7362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15367621291C0FC7000A7362 /* Build configuration list for PBXNativeTarget "RecetasApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15367622291C0FC7000A7362 /* Debug */,
+				15367623291C0FC7000A7362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15367605291C0FC7000A7362 /* Project object */;
+}
