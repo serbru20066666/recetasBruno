@@ -7,9 +7,8 @@
 
 import UIKit
 import Alamofire
-import Japx
 
-typealias RecetasListCompletionBlock = (DataResponse<Recetas>) -> (Void)
+typealias RecetasListCompletionBlock = (Recetas?) -> (Void)
 
 class RecetasService: NSObject {
     
@@ -18,8 +17,17 @@ class RecetasService: NSObject {
         return Alamofire.request(
             Constants.API.URLBase.appendingPathComponent("/recetas"),
             method: .get
-        ).responseCodableJSONAPI(decoder: .init(), completionHandler: completion)
+        ).responseData { jsonData in
+            if let dataJson = jsonData.data {
+                let FoodsList = try? JSONDecoder().decode(Recetas.self, from: dataJson)
+                completion(FoodsList)
+            } else {
+                completion(nil)
+            }
+            
+        }
         
     }
 
 }
+

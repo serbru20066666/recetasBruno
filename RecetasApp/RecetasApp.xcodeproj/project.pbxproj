@@ -45,7 +45,6 @@
 		15367653291C1B60000A7362 /* RecetasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367652291C1B60000A7362 /* RecetasService.swift */; };
 		1536765B291C1C3E000A7362 /* Recetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536765A291C1C3E000A7362 /* Recetas.swift */; };
 		1536765E291C1C9C000A7362 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536765D291C1C9C000A7362 /* Constants.swift */; };
-		15367660291C1E37000A7362 /* KebabCaseJAPXDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536765F291C1E37000A7362 /* KebabCaseJAPXDecoder.swift */; };
 		15367666291C1F7B000A7362 /* ThemeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367662291C1F7B000A7362 /* ThemeInitializer.swift */; };
 		15367667291C1F7B000A7362 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367663291C1F7B000A7362 /* Initializer.swift */; };
 		15367669291C1F7B000A7362 /* AlamofireInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15367665291C1F7B000A7362 /* AlamofireInitializer.swift */; };
@@ -96,7 +95,6 @@
 		15367652291C1B60000A7362 /* RecetasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasService.swift; sourceTree = "<group>"; };
 		1536765A291C1C3E000A7362 /* Recetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recetas.swift; sourceTree = "<group>"; };
 		1536765D291C1C9C000A7362 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		1536765F291C1E37000A7362 /* KebabCaseJAPXDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KebabCaseJAPXDecoder.swift; sourceTree = "<group>"; };
 		15367662291C1F7B000A7362 /* ThemeInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeInitializer.swift; sourceTree = "<group>"; };
 		15367663291C1F7B000A7362 /* Initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
 		15367665291C1F7B000A7362 /* AlamofireInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireInitializer.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 		1536764E291C1279000A7362 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				1536765F291C1E37000A7362 /* KebabCaseJAPXDecoder.swift */,
 				1536764F291C1285000A7362 /* APIError.swift */,
 			);
 			path = API;
@@ -462,7 +459,6 @@
 				1512B7ED291C7F9E008FC518 /* PlaceWireframe.swift in Sources */,
 				15367647291C1098000A7362 /* UITableView+DequeueCell.swift in Sources */,
 				15367650291C1285000A7362 /* APIError.swift in Sources */,
-				15367660291C1E37000A7362 /* KebabCaseJAPXDecoder.swift in Sources */,
 				1536762B291C102C000A7362 /* ListaRecetasInterfaces.swift in Sources */,
 				1512B7EF291C8175008FC518 /* MapKit+Recetas.swift in Sources */,
 				1512B7D9291C6812008FC518 /* DetailRecetaPresenter.swift in Sources */,

@@ -5,7 +5,7 @@
 //  Created by Bruno on 9/11/22.
 //  .
 //
-//  
+//
 //
 
 import UIKit
@@ -44,7 +44,7 @@ extension ListaRecetasPresenter: ListaRecetasPresenterInterface {
         } else {
             if let recetas = items?.recetas {
                 filteredData = searchText.isEmpty ? recetas : recetas.filter {
-                    $0.nombre!.contains(searchText.lowercased())
+                    ($0.nombre ?? "").lowercased().contains(searchText.lowercased())
                 }
                 if filteredData.count == 0 {
                     self.items = self.itemsBackup
@@ -80,21 +80,15 @@ extension ListaRecetasPresenter: ListaRecetasPresenterInterface {
     
     func viewDidLoad() {
         self.view.setLoadingVisible(true)
-        interactor.getRecetas { [weak self] (response) -> (Void) in
+        let _ = interactor.getRecetas { [weak self] (response) -> (Void) in
+            if let list =  response {
+                self?.items = list
+                self?.itemsBackup = list
+            } else {
+                self?.wireframe.showErrorAlert(with: "DATA ERROR")
+            }
             self?.view.setLoadingVisible(false)
-            self?._handleRecetasListResult(response.result)
-        }
-    }
-    
-    // MARK: Utility
-    
-    private func _handleRecetasListResult(_ result: Result<Recetas>) {
-        switch result {
-        case .success(let jsonObject):
-            items = jsonObject
-            itemsBackup = items
-        case .failure(let error):
-            wireframe.showErrorAlert(with: error.message)
         }
     }
 }
+
